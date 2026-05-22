@@ -7,7 +7,7 @@ public class VertexCover {
 
         Set<Integer> cobertura = new HashSet<>();
 
-        boolean[] visitado = new boolean[grafo.getVertices()];
+        boolean[] visitado = new boolean[grafo.getVertices() + 1];
 
         for (Aresta aresta : grafo.getArestas()) {
 

@@ -21,16 +21,20 @@ public class Main {
 
             System.out.println("\nAresta " + (i + 1));
 
-            System.out.print("Origem: ");
-            int origem = scanner.nextInt();
+              System.out.print("Origem: ");
+                int origem = scanner.nextInt();
 
-            System.out.print("Destino: ");
-            int destino = scanner.nextInt();
+                System.out.print("Destino: ");
+                int destino = scanner.nextInt();
 
-            grafo.adicionarAresta(origem, destino);
+                if (origem < 1 || origem > vertices || destino < 1 || destino > vertices) {
+                    System.out.println("Aresta inválida! Use vértices entre 1 e " + vertices);
+                    i--;
+                    continue;
+                }
+
+             grafo.adicionarAresta(origem, destino);
         }
-
-        grafo.mostrarGrafo();
 
         Set<Integer> cobertura = VertexCover.encontrarVertexCover(grafo);
 
