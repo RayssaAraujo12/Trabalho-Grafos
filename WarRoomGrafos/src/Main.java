@@ -36,15 +36,18 @@ public class Main {
 
         System.out.println("\n===== RESULTADO =====");
 
-        System.out.println("Vértices escolhidos:");
-        System.out.println(cobertura);
+System.out.println("Vértices escolhidos:");
+System.out.println(cobertura);
 
-        System.out.println("Tamanho da cobertura: " + cobertura.size());
+System.out.println("Tamanho da cobertura: "
+        + cobertura.size());
 
-        System.out.println("\n===== COMPLEXIDADE =====");
-        System.out.println("Complexidade aproximada: O(E)");
-        System.out.println("Onde E é o número de arestas.");
+System.out.println("\n===== COMPLEXIDADE =====");
+System.out.println("Complexidade aproximada: O(E)");
+System.out.println("Onde E é o número de arestas.");
 
-        scanner.close();
+scanner.close();
+
+    
     }
 }
